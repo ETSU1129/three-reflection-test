@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      canvas {
+        display: block;
+      }
+      #container {
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A grid item reveal animation on hover inspired by Metalab"
+    />
+    <meta
+      name="keywords"
+      content="grid hover animation, gsap, hover effect grid, metalab hover"
+    />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      document.documentElement.className = "js";
+    </script>
+  </head>
+  <body class="work-about">
+    <header class="work-about-header">
+      <div class="header-title">K.ETURYO</div>
+      <div class="header-title2">PORTFOLIO@24</div>
+      <div class="header-menu">aboutme</div>
+    </header>
+
+    <main class="work-about-main">
+      <p id="back">
+        <a href="index.html">Back</a>
+      </p>
+      <h2>Cinema View</h2>
+      <p>A grid item reveal animation on hover inspired by</p>
+      <img src="media/cinema/cinema1.png" alt="" />
+      <img src="media/cinema/cinema2.png" alt="" />
+      <img src="media/cinema/cinema3.png" alt="" />
+      <img src="media/cinema/cinema4.png" alt="" />
+    </main>
+    <script src="js/gsap.min.js"></script>
+    <!-- Image preloader -->
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script type="module" src="js/index.js"></script>
+
+    <div id="container"></div>
+    <script src="js/app.js" type="module"></script>
+  </body>
+</html>
