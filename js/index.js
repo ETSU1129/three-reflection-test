@@ -2,16 +2,12 @@
 import { preloadImages } from "./utils.js";
 import gsap from "gsap";
 
-// gsapをインスタンス化
-new gsap();
-
 // DOM要素を取得する
 const workNav = document.querySelector(".frame__works"); // ナビゲーション全体
 const workLinks = [...workNav.querySelectorAll("a")]; // ナビゲーション内のリンク要素aタグを取ってくる
 
 const title = document.querySelector(".frame__title-main"); // タイトル要素
 const bgImageElements = [...document.querySelectorAll(".background__image")]; // 背景画像要素
-const video = document.querySelector(".background__video"); // 背景ビデオ要素
 
 /**
  * 方向属性に基づいてクリップパス（clip-path）の値を計算する関数。
