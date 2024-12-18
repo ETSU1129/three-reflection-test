@@ -43,6 +43,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.top-body {
+  overflow-y: hidden;
+}
 
 /* Page Loader */
 .js .loading::before,
