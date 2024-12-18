@@ -1,12 +1,20 @@
 /**
- * Preloads images specified by the CSS selector.
+ * 指定されたCSSセレクターの画像を事前に読み込みます。
  * @function
- * @param {string} [selector='img'] - CSS selector for target images.
- * @returns {Promise} - Resolves when all specified images are loaded.
+ * @param {string} [selector='img'] - 対象となる画像のCSSセレクター。
+ * @returns {Promise} - 指定されたすべての画像が読み込まれたときに解決されます。
  */
-export const preloadImages = (selector = 'img') => {
-    return new Promise((resolve) => {
-        // The imagesLoaded library is used to ensure all images (including backgrounds) are fully loaded.
-        imagesLoaded(document.querySelectorAll(selector), {background: true}, resolve);
-    });
+
+import imagesLoaded from "imagesloaded";
+
+export const preloadImages = (selector = "img") => {
+  return new Promise((resolve) => {
+    // imagesLoadedライブラリを使用して、すべての画像（背景画像を含む）が完全に読み込まれたことを確認します。
+    imagesLoaded(
+      document.querySelectorAll(selector),
+      { background: true },
+      resolve
+    );
+  });
 };
+b;

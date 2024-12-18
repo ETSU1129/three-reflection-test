@@ -1,5 +1,9 @@
 // 画像をインポートする関数を読み込む
 import { preloadImages } from "./utils.js";
+import gsap from "gsap";
+
+// gsapをインスタンス化
+new gsap();
 
 // DOM要素を取得する
 const workNav = document.querySelector(".frame__works"); // ナビゲーション全体
