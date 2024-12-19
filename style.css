@@ -276,6 +276,7 @@ a:focus-visible {
   font-size: clamp(2rem, 8vw, 9rem);
   display: grid;
   align-content: center;
+  text-align: center;
   width: 100%;
   pointer-events: none;
 }
@@ -305,6 +306,7 @@ a:focus-visible {
   position: relative;
   z-index: 10;
   text-transform: none;
+  text-align: center;
   font-weight: normal;
   opacity: 0;
   grid-area: 1 / 2 / -1 / -2;
